@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Sistemas de Numeração</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styleSistemasNumeracao.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="allBody">
+        <h1>Sistemas de Numeração</h1>
+        <h2>Introdução</h2>
+        <p>Aprendi este conteúdo com facilidade pois foi de fácil entendimento e as conversões utilizam apenas as operações básicas da matemática, não envolvem nada extremo, tirando os números gigantes que podem aparecer, que de vez em quando podem confundir.</p>
+        <p>Sistemas de numeração são conjuntos de símbolos que são utilizados para representar quantias numéricas. Um sistema com dez símbolos é chamado de Sistema de Base 10 ou Sistema decimal.</p>
+        <p>Neste conteúdo foram estudados os seguintes sistemas:</p>
+        <ul>
+            <li>
+                Sistema Binário
+                <ul>
+                    <li>Operações básicas com binários (Adição, subtração, multiplicação e divisão)</li>
+                </ul>
+            </li>
+            <li>Sistema Octal</li>
+            <li>Sistema Hexadecimal</li>
+            <li>
+                Conversão de bases
+                <ul>
+                    <li>Regra das divisões sucessivas</li>
+                    <li>Regra da decomposição de número</li>
+                    <li>Tabela de Equivalência</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Sistema Binário</h2>
+        <p>O sistema binário contém 2 símbolos: 0 e 1. Eles são utilizados para representar todos os números. A forma que eles são usados para representar os números é a mesma do sistema decimal, pela ordem crescente: 0, 1, 10, 11, 100, 101 e assim por diante.</p>
+        <p>Para converter números da base 10 para a base 2 se utiliza o método de divisão sucessiva, divindo por 2.</p>
+        <p>Para converter números da base 2 para a base 10 se utiliza a regra de decomposição. Cada digito deve ser multiplicado por potências de 2, começando com 2^0.</p>
+        <h3>Tabela com os números binários até 20</h3>
+        <img src="../imgs/SistemasNumeracao/tabelaBinarios.png" width="25%">
+
+        <h2>Regra das Divisões Sucessivas</h2>
+        <p>É possivel transformar qualquer número decimal em alguma outra base utilizando a regra das divisões sucessivas.</p>
+        <p>Faça a divisão do número decimal pela base na qual você quer converter, nesse caso 2, o sistema binário, então guarde o resto e divida novamente o quociente pela base X até que ele seja menor que a base. O número na base X será a sequência dos restos obtidos junto com o último quociente, começando pela direita.</p>
+        <img src="../imgs/SistemasNumeracao/divisaoSucessiva.png" width="25%">
+        <br>
+
+        <h2>Regra da decomposição de número na Base X</h2>
+        <p>É possivel transformar qualquer número de base não decimal em base decimal usando o método de decomposição de número.</p>
+        <p>Cada digito deve ser multiplicado por potências da base X, por exemplo 8. O último digito é multiplicado por 8^0, o penúltimo multiplicado por 8^1, o antepenúltimo por 8^2 e assim sucessivamente até acabar os dígitos.</p>
+        <img src="../imgs/SistemasNumeracao/decomposicao.png" width="25%">
+
+        <h2>Adição de Binários</h2>
+        <p>A operação de adição com números binários seguem as mesmas regras dos números decimais.</p>
+        <p>Observar na adição:</p>
+        <p>1 + 1 = 10 > O "0" permanece e o "1" vai para a próxima casa.</p>
+        <p>1 + 1 + 1 = 11 > O "1" permanece e o outro "1" vai para a próxima casa.</p>
+        <img src="../imgs/SistemasNumeracao/adicaoBinarios.png" width="25%">
+
+        <h2>Subtração de Binários</h2>
+        <p>A operação de subtração com números binários seguem as mesmas regras dos números decimais.</p>
+        <p>Observar na subtração:</p>
+        <p>0 - 1 = 1 > Quando isso ocorrer, precisamos pedir emprestado, então fica 10 - 1 = 1</p>
+        <img src="../imgs/SistemasNumeracao/subtracaoBinarios.png" width="25%">
+
+        <h2>Multiplicação de Binários</h2>
+        <p>As operações de multiplicação com números binários seguem as mesmas regras dos números decimais.</p>
+        <img src="../imgs/SistemasNumeracao/multiplicacaoBinarios.png" width="25%">
+
+        <h2>Divisão de Binários</h2>
+        <p>As operações de multiplicação com números binários seguem as mesmas regras dos números decimais. O quociente sempre será 0 ou 1.</p>
+        <img src="../imgs/SistemasNumeracao/divisaoBinarios.png" width="25%">
+        <br>
+
+        <h2>Sistema Octal</h2>
+        <p>O sistema octal contém 8 símbolos: 0, 1, 2, 3, 4, 5, 6 e 7. Eles são utilizados para representar todos os números. A forma que eles são usados para representar os números é a mesma do sistema decimal, pela ordem crescente.</p>
+        <h3>Tabela com os números do sistema octal até 20</h3>
+        <img src="../imgs/SistemasNumeracao/tabelaOctal.png" width="25%">
+
+        <p>Para converter números da base 10 para a base 8 se utiliza o método de divisão sucessiva, divindo por 8.</p>
+        <p>Para converter números da base 8 para a base 10 se utiliza a regra de decomposição. Cada digito deve ser multiplicado por potências de 8, começando com 8^0.</p>
+        <p>Já que 8 é uma potência de 2 (2^3), é possível converter da base 2 diretamente para a base 8 utilizando uma tabela de equivalência:</p>
+        <table>
+            <tr>
+                <th>Binário</th>
+                <th>Octal</th>
+            </tr>
+            <tr>
+                <td>000</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>001</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>010</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>011</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>100</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>110</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>111</td>
+                <td>7</td>
+            </tr>
+
+        </table>
+        <p>Precisamos de 3 digitos binários para 1 octal, e caso o número binário não tenha 3 digitos, basta adicionar zeros a esquerda para completar.</p>
+        <p>Primeiramente, separe o número binário em grupos de 3 começando pela direita, acrescentando zeros a esquerda caso algum grupo não tenha 3 dígitos. Usando a tabela de equivalência, substitua cada grupo pelo octal equivalente.</p>
+        <img src="../imgs/SistemasNumeracao/base2paraBase8.png" width="25%">
+        <p>Também é possivel fazer o processo contrário, indo de um número de base 8 para um número de base 2. Fazendo o contrário do que foi feito antes.</p>
+        <img src="../imgs/SistemasNumeracao/base8paraBase2.png" width="25%">
+
+        <h2>Sistema Hexadecimal</h2>
+        <p>O sistema hexadecimal contém 16 símbolos: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E e F. Eles são utilizados para representar todos os números. A forma que eles são usados para representar os números é a mesma do sistema decimal, pela ordem crescente.</p>
+        <h3>Tabela com os números do sistema hexadecimal até 20</h3>
+        <img src="../imgs/SistemasNumeracao/tabelaHexadecimal.png" width="25%">
+        
+        <p>Para converter números da base 10 para a base 16 se utiliza o método de divisão sucessiva, divindo por 16. E quando for juntar os restos com o último quociente, substituir os números acima de 10 pelos seus equivalentes em letras:</p>
+        <table>
+            <tr>
+                <th>Decimal</th>
+                <th>Hexadecimal</th>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>E</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>F</td>
+            </tr>
+        </table>
+        <br>
+        <img src="../imgs/SistemasNumeracao/divisaoSucessivaBase16.png" width="25%">
+        <p>Para converter números da base 16 para a base 10 se utiliza a regra de decomposição. Cada digito deve ser multiplicado por potências de 16, começando com 16^0 e substituindo as letras pelos seus equivalentes em números.</p>
+        <p>Já que 16 é uma potência de 2 (2^4), é possível converter da base 2 diretamente para a base 16 utilizando uma tabela de equivalência:</p>
+        <table>
+            <tr>
+                <th>Binário</th>
+                <th>Hexadecimal</th>
+            </tr>
+            <tr>
+                <td>0000</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0001</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>0010</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>0011</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>0100</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>0101</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>0110</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>0111</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>1000</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>1001</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>1010</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>1011</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>1100</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td>1101</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>1110</td>
+                <td>E</td>
+            </tr>
+            <tr>
+                <td>1111</td>
+                <td>F</td>
+            </tr>
+
+        </table>
+        <p>Precisamos de 4 digitos binários para 1 hexadecimal, e caso o número binário não tenha 4 digitos, basta adicionar zeros a esquerda para completar.</p>
+        <p>Primeiramente, separe o número binário em grupos de 4 começando pela direita, acrescentando zeros a esquerda caso algum grupo não tenha 4 dígitos. Usando a tabela de equivalência, substitua cada grupo pelo hexadecimal equivalente.</p>
+        <img src="../imgs/SistemasNumeracao/base2paraBase16.png" width="25%">
+        <p>Também é possivel fazer o processo contrário, indo de um número de base 16 para um número de base 2. Fazendo o contrário do que foi feito antes.</p>
+        <img src="../imgs/SistemasNumeracao/base16paraBase2.png" width="25%">
+        <br>
+        <a href="../index.html">Voltar ao início</a>
+    </div>
+</body>
+</html>
