@@ -24,3 +24,11 @@ a {
 h2 {
     color: pink;
 }
+
+table {
+    text-align: center;
+}
+
+img {
+    width: 25%;
+}
